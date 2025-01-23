@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+/* -------------------------------------header part css------------------------------------- */
+
+.navbar{
+    background-color: rgb(61, 58, 58);
+    width: 99.9vw;
+    height: 65px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.border:hover{
+    border: 2px solid yellow;
+}
+
+
+
+/*-----------nav-logo css---------- */
+
+.nav-logo{
+    width: 110px;
+    height: 55px;
+    border: 2px solid transparent;
+    margin-left: 1.5rem;
+    
+}
+.logo{
+    background-image: url("nav-logo.jpeg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/*-----------nav-search css---------- */
+
+.nav-search{
+    display: flex;
+    border-radius: 5px;
+    /* justify-content: center; */
+}
+
+.nav-search input{
+    width: 460px;
+    height: 35px;
+    border: 2px solid yellow;
+    /* text-align: center; */
+    font-weight: 600;
+    font-size: 1rem;
+    font-style: italic;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.search-icon{
+    height: 37px;
+    width: 32px;
+    color: rgb(61, 58, 58);
+    background-color: yellow;
+    border: 2px solid transparent;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*-----------social-media css---------- */
+.nav-media i{
+    font-size: 2rem;
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+.nav-media a{
+    margin-right: 8px;
+}
+
+/*-----------nav-log and nav-reg css---------- */
+
+
+.nav-member{
+    width: 180px;
+    height: 40px;
+    margin-right: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.but{
+    width: 65px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.but a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-member a{
+    text-decoration: none;
+
+}
+
+
+/* --------------navlink-box css-------------- */
+
+.navlink-box{
+    width: 100vw;
+    height: 30px;
+    background-color: silver;
+}
+.navlink{
+    float: right;
+    width: 25%;
+    height: 100%;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navlink a{
+    text-decoration: none;
+    color: rgb(56, 55, 55);
+    font-weight: 700;
+    font-size: 0.85rem;
+    border: 2px solid transparent;
+}
+
+header{
+    position:sticky;
+    top: 0;
+}
+
+.navlink a:hover{
+    border: 2px solid white;
+}
+/* ----------------------------------------------------------------------------------- */
+/* --------------------------------main section-------------------------------- */
+
+/* ----------hero-section---------- */
+
+
+.hero-section{
+    width: 100vw;
+    height: 600px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image{
+    width: 95%;
+    height: 550px;
+    border: 5px solid transparent;
+    background-image: url("hero-image1.jfif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: myherochange 25s ease-in infinite ;
+}
+
+.hero-image:hover{
+    border: 5px solid yellow;
+}
+
+
+@keyframes myherochange{
+    0%{
+        background-image: url("hero-image1.jfif");
+        background-size: cover;
+    }
+    20%{
+        background-image: url("hero-image2.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    40%{
+        background-image: url("hero-image3.jfif");
+        background-size: cover;
+        background-position: center;
+    }
+    60%{
+        background-image: url("hero-image4.jfif");
+        background-size: cover;
+        background-position: center;
+    }
+    80%{
+        background-image: url("hero-image5.jfif");
+        background-size: cover;
+        background-position: center;
+    }
+    100%{
+        background-image: url("hero-image6.jfif");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* --------categary-section css-------- */
+
+
+.main-heading{
+    text-align: center;
+}
+
+.main-heading h2{
+    background-color:rgb(229, 240, 250);
+    border: 4px solid rgb(199, 228, 240);
+    font-style: italic;
+}
+.Anime-categaries{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.box {
+    height: 400px;
+    width: 22%;
+    background-color: rgb(165, 165, 165);
+    padding: 20px 0 15px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    border: 5px solid transparent;
+}
+
+.box-content{
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.div-border:hover{
+    border: 5px solid yellow;
+
+}
+
+.content{
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content p a{
+    color: rgb(44, 42, 42);
+}
+
+.content p a:hover{
+    color: blue;
+}
+
+
+
+/* ------------------------------------------------------------------footer css------------------------------------------------------------------ */
+
+footer{
+    margin-top: 40px;
+    width: 100vw;
+    height: 350px;
+    background-color: rgb(61, 58, 58);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.suggestion-box{
+    width: 40%;
+    height: 80%;
+    padding: 10px;
+    background-color: rgb(143, 143, 143);
+}
+
+/* ------------footer links css------------ */
+
+.link-box a:hover{
+    color: rgb(153, 153, 153);
+}
+
+.footer-links{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.link-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.link-box a{
+    font-size: 1.2rem;
+
+}
+
+.link-box p{
+    font-size: 1.2rem;
+
+}
+
+
+
+
+/* -------------footer form css------------- */
+
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+
+
+.input-text{
+    width: 60%;
+    height: 26px;
+    border: 2px solid rgb(63, 62, 62);
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: rgb(220, 237, 251);
+    text-align: center;
+}
+
+textarea{
+    width: 80%;
+    height: 100px;
+    border: 2px solid rgb(63, 62, 62);
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: rgb(220, 237, 251);
+    text-align: center;
+}
+
+.input-form input{
+    width: 13%;
+    height: 25px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border: 2px solid rgb(63, 62, 62);
+}
+
+#Submit{
+    background-color: lightgreen;
+}
+
+#reset{
+    background-color: rgba(255, 0, 0, 0.605);
+}
+
+.span-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+

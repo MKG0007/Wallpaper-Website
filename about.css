@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+header{
+    width: 99vw;
+    height: 60px;
+    background-color: aqua;
+    
+}
+#headDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#headDiv p{
+    display: inline;
+
+}
